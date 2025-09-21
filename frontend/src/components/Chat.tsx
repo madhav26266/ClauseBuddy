@@ -116,7 +116,7 @@ export default function Chat() {
     const restoreChat = async () => {
       if (!token || !chatId) return;
       try {
-        const res = await fetch(`http://localhost:5000/api/chat/${chatId}`, {
+        const res = await fetch(`http://clausebuddy-production.up.railway.app/api/chat/${chatId}`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.ok) {
@@ -303,7 +303,7 @@ export default function Chat() {
       const formData = new FormData();
       formData.append('file', file);
 
-      const response = await fetch('http://localhost:5000/api/chat/upload', {
+      const response = await fetch('http://clausebuddy-production.up.railway.app/api/chat/upload', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -623,4 +623,5 @@ export default function Chat() {
       </div>
     </>
   );
+
 }

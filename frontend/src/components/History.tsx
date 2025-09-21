@@ -39,7 +39,7 @@ export default function History({ onSectionChange }: HistoryProps) {
 
   const fetchChatHistory = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/chat/history', {
+      const response = await fetch('http://clausebuddy-production.up.railway.app/api/chat/history', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -225,4 +225,5 @@ export default function History({ onSectionChange }: HistoryProps) {
       </div>
     </div>
   );
+
 }

@@ -1,0 +1,30 @@
+# Node modules
+
+# Build output
+
+
+# Logs
+*.log
+
+.env
+
+
+# Python virtual environments
+.venv/
+venv/
+Microservice/venv/
+miv
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Node / frontend
+/frontend/node_modules
+/backend/node_modules
+/frontend/dist
+/frontend/.vite
+/frontend/build/

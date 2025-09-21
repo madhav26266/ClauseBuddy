@@ -115,5 +115,6 @@ app.post("/api/upload", upload.array("files", 2), async (req, res) => {
 
 
 // Start Server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => { console.log(`Node.js backend running on port ${PORT}`); });
+export default app;
+
+

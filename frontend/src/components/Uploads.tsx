@@ -44,7 +44,7 @@ export default function Uploads() {
 
   const fetchFiles = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/chat/files', {
+      const response = await fetch('http://clausebuddy-production.up.railway.app/api/chat/files', {
         headers: { 'Authorization': `Bearer ${token}` },
       });
       if (response.ok) {
@@ -234,4 +234,5 @@ export default function Uploads() {
       </div>
     </div>
   );
+
 }
